@@ -16,11 +16,11 @@ class ContatoForm(forms.Form):
 		corpo = f'Nome:{nome}\nMensagem:{mensagem}'
 		mail = EmailMessage(
 			subject=assunto,
-			from_email='henriquemarquessantossilva@hotmail.com',
+			from_email='henriqueplanet6@gmail.com',
 			to=[email,],
 			body=corpo,
 			headers={
-			'Replay-To':'henriquemarquessantossilva@hotmail.com'
+			'Replay-To':'henriqueplanet6@gmail.com'
 			}
 		)
 		mail.send()
